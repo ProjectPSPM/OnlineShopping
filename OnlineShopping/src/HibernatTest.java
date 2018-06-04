@@ -19,50 +19,7 @@ public class HibernatTest {
 
 	public static void main(String[] args) {
 
-		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-		Session session = sessionFactory.openSession();
-		session.beginTransaction();
-		
-//		Session session = HibernateUtil.getSession();
-//		session.beginTransaction();
 
-        // UPDATED: Create CriteriaBuilder
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-
-        // UPDATED: Create CriteriaQuery
-        CriteriaQuery<UserDetail> criteria = builder.createQuery(UserDetail.class);
-
-        // UPDATED: Specify criteria root
-        criteria.from(UserDetail.class);
-
-        // UPDATED: Execute query
-        List<UserDetail> userList = session.createQuery(criteria).getResultList();
-        
-        for(UserDetail user : userList) {
-        	System.out.println(user.getUserName() + " " + user.getUserEmail());
-        }
-        
-        
-//		UserDetail person = new UserDetail();
-//		person.setId(1);
-//		person.setUserName("Pushpendra Singh");
-//		session.save(person);
-//		session.getTransaction().commit();
-//		
-//		HibernateUtil.closeSession();
-		session.close();
-		
-//		String file = "person.ser";
-//		try {
-//			FileInputStream fileInputStream = new FileInputStream(file);
-//			objectInputStream = new ObjectInputStream(fileInputStream);
-//			Person p1 = (Person) objectInputStream.readObject();
-//
-//			System.out.println("Deserialized Data");
-//			System.out.println(p1.name + " : " + p1.num);
-//			System.out.println("Deserialized Data");
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
+		System.out.println("Hi checking commit");
 	}
 }
