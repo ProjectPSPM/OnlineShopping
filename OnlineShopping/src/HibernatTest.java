@@ -20,6 +20,6 @@ public class HibernatTest {
 	public static void main(String[] args) {
 
 
-		System.out.println("Hi checking commit");
+		System.out.println("Hi checking commit again");
 	}
 }
