@@ -1,0 +1,183 @@
+
+@charset "UTF-8";
+
+
+/* HEADER FILE */
+
+.searchBar {
+	padding: 20px;
+	background-color: DodgerBlue;
+}
+
+.btnSearch:hover {
+	background: #bbb;
+}
+
+.btnSearch {
+	float: left;
+	width: 15%;
+	padding: 8.5px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+
+.inputSearch {
+	padding: 5px;
+	font-size: 17px;
+	border: none;
+	float: left;
+	width: 80%;
+	background: white;
+}
+
+/* Links inside the navbar */
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 20px 16px;
+	text-decoration: none;
+}
+
+/* The dropdown container */
+.ddHeader {
+	float: left;
+
+}
+
+/* Dropdown button */
+.ddHeader .dropbtn {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.ddContent {
+	display: none;
+	position: absolute;
+	background-color: DodgerBlue;
+	width: 100%;
+	left: 0;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+/* Mega Menu header, if needed */
+.ddContent .header {
+	background: red;
+	padding: 16px;
+
+	color: white;
+}
+
+/* Show the dropdown menu on hover */
+.ddHeader:hover .ddContent {
+	display: block;
+}
+.ddHeader .dropbtn:hover
+{
+color:red;
+}
+
+/* Create three equal columns that floats next to each other */
+.colCategory {
+	float: left;
+	width: 33.33%;
+	background-color: DodgedBlue;
+	height: 250px;
+}
+
+/* Style links inside the columns */
+.colCategory a {
+	float: none;
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+/* Add a background color on hover */
+.colCategory a:hover {
+	background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.rowCategory:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+h4 {
+	color: white;
+}
+
+
+/* HOME FILE
+
+
+
+
+
+
+  */
+
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	width: 100%;
+	margin: auto;
+	max-height: 200px;
+	
+}
+
+.colGrid {
+	float: left;
+	width: 50%;
+	padding: 20px;
+}
+
+.btnAdd,.btnSignIn{
+	margin: 10px;
+}
+
+
+
+
+
+
+/*    LOGIN FILE*/
+.loginForm{
+	width: 50%;
+	border: 2px solid #DCDCDC;
+	margin: 0% 20% 0% 20%;
+	padding: 10% 10% 10% 10%;
+	font-size: 15px;
+}
+
+.inputEmail, .inputPassword {
+	width: 100%;
+	paddign: 10% 10% 10% 10%;
+}
+
+.btnLogin {
+	text-color: black;
+	background: linear-gradient(#EFD88A, #E8C552);
+	width: 100%;
+	margin-top: 10px;
+	background-color: #EAC95F
+}
+
+
+
+
+
